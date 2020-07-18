@@ -23,6 +23,6 @@
    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" 
    output="screen" args="-urdf -param robot_description -model mcl_bot"/>
 
-   <node name="rviz" pkg="rviz" type="rviz" respawn="false"/>
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mcl_bot)/launch/Rvizconfig.rviz"/>
 
 </launch>
